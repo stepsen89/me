@@ -1,0 +1,25 @@
+{
+  "name": "personal_page",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/main.scss css/styles.css",
+    "css-watch": "npm run css-build --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Stephanie Senoner",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.2",
+    "node-sass": "^4.9.3",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "browsersync": "0.0.1-security",
+    "bulma-divider": "^0.2.0",
+    "bulma-timeline": "^3.0.4",
+    "live-server": "^1.2.1",
+    "scrollreveal": "^4.0.5"
+  }
+}

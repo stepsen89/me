@@ -1,32 +1,32 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 // Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
+$purple: #8a4d76;
+$pink: #fa7c91;
 $brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$grey-light: #F3F3F3;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$grey-light: #f3f3f3;
 $black: black;
-$link: #31708E;
+$link: #31708e;
 // $white: #19181A;
 
-// added theme colors 
+// added theme colors
 
-$theme-one-blue: #427AA1;
-$theme-one-white: #EBF2FA;
+$theme-one-blue: #427aa1;
+$theme-one-white: #ebf2fa;
 $theme-one-black: #070707;
-$theme-one-blue-2: #C9DAEA;
-$theme-one-purple: #331E38;
+$theme-one-blue-2: #c9daea;
+$theme-one-purple: #331e38;
 
 $color-primary: #051012;
-$color-primary-light: #FFE;
-$color-primary-dark: #FFD;
+$color-primary-light: #ffe;
+$color-primary-dark: #ffd;
 
-$font-family-primary: 'Montserrat', sans-serif;
+$font-family-primary: "Montserrat", sans-serif;
 
 // Update Bulma's global variables
 $family-sans-serif: "Montserrat", sans-serif;
@@ -43,16 +43,15 @@ $input-shadow: none;
 
 // navbar customisation
 
-$navbar-item-hover-background-color: #285D7C !important;
-$navbar-item-active-background-color: #285D7C !important;
+$navbar-item-hover-background-color: #285d7c !important;
+$navbar-item-active-background-color: #285d7c !important;
 $navbar-height: 4rem;
 
 $button-hover-color: green !important;
 
 .hero-body {
-  display:flex !important;
+  display: flex !important;
 }
-
 
 @import "../sass/main.scss";
 // Import only what you need from Bulma
@@ -80,8 +79,8 @@ $button-hover-color: green !important;
 // }
 .mountain-hero {
   // background-color: #ffffff;
-  @include respond(tab-port){
-    background-image: url('../images/olivier-miche-OZACaaUskhg-unsplash.jpg');
+  @include respond(tab-port) {
+    background-image: url("../images/olivier-miche-OZACaaUskhg-unsplash.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -101,21 +100,21 @@ $button-hover-color: green !important;
 
 .navbar.is-spaced {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  
-  @include respond(desktop){
+
+  @include respond(desktop) {
     padding: 0.5rem 10rem 0.5rem 3rem;
   }
 }
 
 .contact__icon {
-  color: blue
+  color: blue;
 }
 
 .portfolio__img {
   width: 70vw;
   height: 12rem;
-  
-  @include respond(tab-port){
+
+  @include respond(tab-port) {
     width: 80%;
     height: 20rem;
   }
@@ -123,7 +122,7 @@ $button-hover-color: green !important;
   &-phone {
     width: 30vw;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
       width: 12vw;
       height: 15rem;
     }
@@ -131,40 +130,40 @@ $button-hover-color: green !important;
 }
 
 .first-container {
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .has-padding-on-desktop {
-  @include respond(tab-port){
+  @include respond(tab-port) {
     padding-bottom: 6rem;
   }
 }
 
 .header__cv-icon {
-    fill: #31708e;
-    height: 2.6rem;
-    width: 2.6rem;
-    margin: 1rem;
+  fill: #31708e;
+  height: 2.6rem;
+  width: 2.6rem;
+  margin: 1rem;
 }
 
-.no-js #loader { 
-  display: none;  
+.no-js #loader {
+  display: none;
 }
-.js #loader { 
-  display: block; 
-  position: absolute; 
-  left: 100px; 
-  top: 0; 
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
 }
 
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url("../images/Preloader_2.gif") center no-repeat #fff;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/Preloader_2.gif") center no-repeat #fff;
 }

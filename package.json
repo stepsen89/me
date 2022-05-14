@@ -1,24 +1,23 @@
 {
   "name": "personal_page",
   "version": "1.0.0",
-  "description": "Personal Portfolio Site",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/mystyle.scss css/mystyle.css",
-    "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "build-css": "npx tailwindcss -i css/styles.css -o ./dist/output.css --watch"
   },
-  "author": "Stephanie Senoner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepsen89/personal_page.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "bulma": "^0.7.2",
-    "node-sass": "^4.9.3"
+  "bugs": {
+    "url": "https://github.com/stepsen89/personal_page/issues"
   },
-  "dependencies": {
-    "browsersync": "0.0.1-security",
-    "bulma-divider": "^0.2.0",
-    "bulma-timeline": "^3.0.4",
-    "live-server": "^1.2.1",
-    "scrollreveal": "^4.0.5"
+  "homepage": "https://github.com/stepsen89/personal_page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }
