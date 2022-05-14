@@ -12,6 +12,10 @@ module.exports = {
         textLight: "hsl(219, 4%, 55%)",
         container: "hsl(219, 32%, 12%)",
         body: "hsl(219, 48%, 8%)",
+        lightText: "hsl(219, 8%, 35%)",
+        lightBody: "hsl(219, 100%, 99%)",
+        lightTitle: "hsl(219, 15%, 15%)",
+        lightContainer: "white",
       },
       fontFamily: {
         poppins: ["'Poppins'", "sans-serif"],

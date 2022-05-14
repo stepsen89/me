@@ -8,31 +8,27 @@
     <link rel="stylesheet" href="dist/output.css" />
     <title>Document</title>
   </head>
-  <body class="font-poppins bg-body text-white">
+  <body class="font-poppins bg-lightBody dark:bg-body text-black dark:text-white">
     <header class="py-8">
       <div
         class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
       >
-        <div class="text-lg font-bold">Stepsen.dev</div>
-        <!-- <div class="hidden md:flex space-x-12 items-center">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#experience">Skills</a>
-          <a href="#experience">Portfolio</a>
-          <a href="#experience">Contact</a>
-        </div> -->
+        <div class="text-lg font-bold md:text-3xl">Stepsen.dev</div>
         <div class="text-h2 lg:flex justify-between space-x-12 items-center">
-          <div class="hidden lg:flex justify-between items-center space-x-12">
+          <div class="hidden xl:flex justify-between items-center space-x-12">
             <a class="hover:text-primary" href="#about"> About </a>
             <a class="hover:text-primary" href="#"> Experience </a>
             <a class="hover:text-primary" href="#"> Skills </a>
             <a class="hover:text-primary" href="#"> Portfolio </a>
             <button class="px-6 py-2 bg-primary text-body rounded-xl">Contact Me</button>
           </div>
-          <i class="fa-solid fa-sun sun"></i>
-          <i class="fa-solid fa-moon moon"></i>
-          <i class="fa-solid fa-bars-staggered md:hidden text-primary"></i>
+          <div class="flex gap-8 items-center justify-center">
+            <i class="fa-solid fa-sun sun text-2xl"></i>
+            <i class="fa-solid fa-moon moon text-2xl"></i>
+            <span class="text-3xl">
+              <i class="fa-solid fa-bars-staggered xl:hidden text-primary"></i>
+            </span>
+          </div>
         </div>
       </div>
     </header>
@@ -41,13 +37,17 @@
       <div class="flex flex-wrap md:flex-nowrap w-full">
         <div class="flex flex-col justify-center mt-0 md:my-36 w-full items-center">
           <h3 class="text-3xl text-primary">Hi. I'm Steph.</h3>
-          <h1 class="font-bold text-5xl md:text-4xl lg:text-6xl">I'm a Software Developer</h1>
+          <h1 class="font-bold text-5xl md:text-4xl lg:text-6xl text-center">
+            I'm a Software Developer
+          </h1>
           <div class="w-full flex justify-center">
-            <button
-              class="px-8 py-4 bg-primary text-white font-bold mt-12 flex items-center space-x-3 rounded-lg"
+            <a
+              href="/assets/Senoner_CV.pdf"
+              download
+              class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold mt-12 flex items-center space-x-3 rounded-lg"
             >
-              <span>Download CV</span>
-            </button>
+              Download CV
+            </a>
           </div>
         </div>
       </div>
@@ -55,49 +55,71 @@
 
     <!-- About Me -->
     <div
-      class="container mt-16 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      class="container mt-16 flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
     >
       <div class="section w-full about">
-        <span class="section-subtitle"> My story </span>
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container container grid">
-          <img src="assets/images/IMG_7469.JPG" alt="" class="about-image" />
-          <div class="about-data text-center">
-            <div class="info grid grid-cols-3 gap-2 mb-7">
-              <div class="bg-container rounded-xl py-3 px-2">
-                <span class="icon">
-                  <i class="fa-solid fa-earth-asia icon"></i>
-                </span>
-                <h3 class="box-title text-sm">Location</h3>
-                <span class="text-xs"> London, UK </span>
+        <h4 class="section-subtitle text-center">About Me</h4>
+        <h2 class="section-title text-center">My Story</h2>
+
+        <div
+          class="about-container container flex flex-col justify-center items-center xl:flex-row pt-8"
+        >
+          <img
+            src="assets/images/IMG_7469.JPG"
+            alt="Stephanie Senoner Profile Picture"
+            class="about-image md:w-1/2 xl:w-1/4 md:h-96"
+            width="400"
+            height="300"
+          />
+          <div class="about-data text-center md:w-3/5 lg:w-full lg:p-16">
+            <div class="info flex gap-2 mb-7 lg:px-8 w-full justify-center">
+              <div class="w-1/3 lg:w-1/4">
+                <div class="bg-lightContainer dark:bg-container rounded-xl py-3 px-2 box-shdw">
+                  <span class="icon">
+                    <i class="fa-solid fa-earth-asia icon"></i>
+                  </span>
+                  <h3 class="text-sm xl:text-base">Location</h3>
+                  <span class="text-xs xl:text-sm"> London, UK </span>
+                </div>
               </div>
-              <div class="bg-container rounded-xl py-3 px-2">
-                <span class="icon">
-                  <i class="fa-solid fa-list-check"></i>
-                </span>
-                <h3 class="text-sm">Projects</h3>
-                <span class="text-xs"> 14+</span>
+              <div class="w-1/3 lg:w-1/4">
+                <div class="bg-lightContainer dark:bg-container rounded-xl py-3 px-2 box-shdw">
+                  <span class="icon">
+                    <i class="fa-solid fa-list-check"></i>
+                  </span>
+                  <h3 class="text-sm xl:text-base">Projects</h3>
+                  <span class="text-xs xl:text-sm"> 14+</span>
+                </div>
               </div>
-              <div class="bg-container rounded-xl py-3 px-2">
-                <span class="icon">
-                  <i class="fa-solid fa-laptop-code icon"></i>
-                </span>
-                <h3 class="text-sm">Experience</h3>
-                <span class="text-xxs"> 4+ years</span>
+              <div class="w-1/3 lg:w-1/4">
+                <div class="bg-lightContainer dark:bg-container rounded-xl py-3 px-2 box-shdw">
+                  <span class="icon">
+                    <i class="fa-solid fa-laptop-code icon"></i>
+                  </span>
+                  <h3 class="text-sm xl:text-base">Experience</h3>
+                  <span class="text-xs xl:text-sm"> 4+ years</span>
+                </div>
               </div>
             </div>
-            <p class="about-description mb-12">
+            <p class="mb-12 xl:px-24 xl:text-lg">
               I'm a passionate Software Developer from Austria with experience in building
               user-centred applications, and strong understanding of React and JavaScript. I focus
               on product development and user experience, creating products users love applying my
               background in psychology and business.
             </p>
-            <a
-              href="#"
-              class="px-8 py-4 bg-primary text-black font-bold mt-12 space-x-3 rounded-lg"
-            >
-              Contact Me
-            </a>
+            <div class="flex flex-col justify-center sm:flex-row gap-4 items-center">
+              <a
+                href="#"
+                class="px-8 py-4 bg-primary text-black font-bold md:mt-12 space-x-3 rounded-lg"
+              >
+                Contact Me
+              </a>
+              <button
+                class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold md:mt-12 flex items-center space-x-3 rounded-lg"
+              >
+                Download CV
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -110,11 +132,11 @@
         <h4 class="section-subtitle text-center">My skills</h4>
         <h2 class="section-title text-center">What I offer</h2>
         <div
-          class="skills-container container flex flex-col md:flex-wrap md:flex-row md:justify-center pt-8"
+          class="skills-container container flex flex-col md:flex-wrap md:flex-row md:justify-center items-center pt-8"
         >
           <div class="skills-content">
             <div class="skills-content--inner">
-              <div class="text-sm font-bold text-primary text-center mb-6">
+              <div class="text-sm lg:text-xl font-bold text-primary text-center mb-6 lg:mb-8">
                 Frontend Development
               </div>
               <div class="skills-box">
@@ -181,7 +203,9 @@
           </div>
           <div class="skills-content">
             <div class="skills-content--inner">
-              <div class="text-sm font-bold text-primary text-center mb-6">Backend Development</div>
+              <div class="text-sm font-bold lg:text-xl text-primary text-center mb-6 lg:mb-8">
+                Backend Development
+              </div>
               <div class="skills-box">
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
@@ -246,7 +270,9 @@
           </div>
           <div class="skills-content">
             <div class="skills-content--inner">
-              <div class="text-sm font-bold text-primary text-center mb-6">Cloud Development</div>
+              <div class="text-sm font-bold lg:text-xl text-primary text-center mb-6 lg:mb-8">
+                Cloud Development
+              </div>
               <div class="skills-box">
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
@@ -398,7 +424,7 @@
 
         <div class="space-y-12 my-16">
           <div
-            class="w-full bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
+            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
           >
             <!-- Client info -->
             <div class="work-container">
@@ -426,65 +452,15 @@
             </div>
           </div>
           <div
-            class="w-full border-2 border-primary rounded-xl p-16 lg:px-32 lg:py-12 lg:space-x-32 flex justify-center lg:justify-start"
+            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
           >
             <!-- Client info -->
-            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-              <span> March 2019 - Sep 2019 </span>
-              <h3 class="text-primary text-3xl font-semibold">
-                Solutions Analyst <span class="text-sm text-darkBG">@everis consulting Ltd</span>
-              </h3>
+            <div class="work-container">
+              <span class="work-time"> since Jan 2020 </span>
+              <h3 class="work-title">Software Developer</h3>
+              <span class="work-company">@District Technologies Ltd</span>
 
-              <p class="text-secondary pt-4">
-                Cross-functional work experience in agile environment. Developing client-faced
-                products (web application dashboard, mobile apps) and implementing microservices
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">Java</div>
-                <div class="badge">Spring</div>
-                <div class="badge">Sonar</div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full border-2 border-primary rounded-xl p-16 lg:px-32 lg:py-12 lg:space-x-32 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-              <span> June 2018 - March 2019 </span>
-              <h3 class="text-primary text-3xl font-semibold">
-                Junior Developer <span class="text-sm text-darkBG">@Cordant Group PLC</span>
-              </h3>
-
-              <p class="text-secondary pt-4">
-                Cross-functional work experience in agile environment. Developing client-faced
-                products (web application dashboard, mobile apps) and implementing microservices
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">Angular</div>
-                <div class="badge">NodeJS</div>
-                <div class="badge">AWS</div>
-                <div class="badge">Serverless</div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full border-2 border-primary rounded-xl p-16 lg:px-32 lg:py-12 lg:space-x-32 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-              <span> since Jan 2020 </span>
-              <h3 class="text-primary text-3xl font-semibold">
-                Software Developer <span class="text-sm text-darkBG">@District Technologies</span>
-              </h3>
-
-              <p class="text-secondary pt-4">
+              <p class="work-description">
                 Cross-functional work experience in agile environment. Developing client-faced
                 products (web application dashboard, mobile apps) and implementing microservices
               </p>
@@ -494,7 +470,40 @@
               >
                 <div class="badge">React</div>
                 <div class="badge">React Native</div>
+                <div class="badge">Java</div>
                 <div class="badge">AWS</div>
+                <div class="badge">Serverless</div>
+                <div class="badge">Docker</div>
+                <div class="badge">GraphQL</div>
+                <div class="badge">SCSS</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
+          >
+            <!-- Client info -->
+            <div class="work-container">
+              <span class="work-time"> since Jan 2020 </span>
+              <h3 class="work-title">Software Developer</h3>
+              <span class="work-company">@District Technologies Ltd</span>
+
+              <p class="work-description">
+                Cross-functional work experience in agile environment. Developing client-faced
+                products (web application dashboard, mobile apps) and implementing microservices
+              </p>
+
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">React</div>
+                <div class="badge">React Native</div>
+                <div class="badge">Java</div>
+                <div class="badge">AWS</div>
+                <div class="badge">Serverless</div>
+                <div class="badge">Docker</div>
+                <div class="badge">GraphQL</div>
+                <div class="badge">SCSS</div>
               </div>
             </div>
           </div>
@@ -506,22 +515,22 @@
     <div
       class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
-      <section class="w-full">
-        <h2 id="work" class="section-title">My projects</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <section class="w-full" id="projects">
+        <h4 class="section-subtitle text-center">Projects</h4>
+        <h2 class="section-title text-center">What I've built</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-12 mb-8">
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small w-min">API</div>
+                <div class="badge small w-min">Tailwind</div>
               </div>
               <img
                 src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
+                class="w-full h-48 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Clock and Date Application</h3>
 
             <span class="project-button"> More info </span>
 
@@ -539,114 +548,138 @@
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small w-min">TailwindCSS</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
+                src="assets/images/bookmark-desktop-preview.png"
+                class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Bookmark Manager Landing Page</h3>
 
             <a>View <i class="fa-solid fa-angle-right"></i></a>
           </div>
+
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small w-min">SCSS</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
+                src="assets/images/meeet-desktop-preview.png"
                 class="w-full h-36 lg:h-48 object-cover"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Meet Landing Page</h3>
+
+            <a>View</a>
+          </div>
+
+          <div class="card">
+            <div class="relative">
+              <div class="flex gap-2 absolute pt-2 right-2">
+                <div class="badge small w-min">SCSS</div>
+              </div>
+              <img
+                src="assets/images/profile-desktop.png"
+                class="w-full h-36 lg:h-48 object-cover"
+              />
+            </div>
+            <h3 class="card-title pt-2">Profile Preview Component</h3>
 
             <a>View</a>
           </div>
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small w-min">SCSS</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
+                src="assets/images/social-desktop-dark.png"
+                class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Social Media Stats Page</h3>
 
             <a>View</a>
           </div>
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small">SCSS</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
+                src="assets/images/time-tracking-desktop.png"
+                class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Time Tracking Dashboard Page</h3>
 
             <a>View</a>
           </div>
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small w-min">API</div>
+                <div class="badge small w-min">React</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
+                src="assets/images/fylo-desktop-preview.png"
+                class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Fylo Landing Page</h3>
 
             <a>View</a>
           </div>
           <div class="card">
             <div class="relative">
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+                <div class="badge small w-min">SCSS</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
+                src="assets/images/huddle-desktop-preview.png"
+                class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">Huddle Landing Page</h3>
 
             <a>View</a>
           </div>
           <div class="card">
             <div class="relative">
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge w-min">React</div>
-                <div class="badge w-min">React</div>
+              <div class="flex absolute pt-2 left-4">
+                <div class="badge small w-min"><i class="fa-brands fa-github"></i></div>
               </div>
-              <img
-                src="assets/images/desktop-clock-app-day.png"
-                class="w-full h-36 lg:h-48 object-cover"
-              />
+              <div class="flex gap-2 absolute pt-2 right-2">
+                <div class="badge small w-min">React</div>
+              </div>
+              <img src="assets/images/nft-desktop.png" class="w-full h-36 lg:h-48 object-fill" />
             </div>
-            <h3 class="card-title pt-2">Desktop Clock Application</h3>
+            <h3 class="card-title pt-2">NFT Card Preview</h3>
 
-            <a>View</a>
+            <a> More Info </a>
           </div>
         </div>
       </section>
     </div>
+
+    <!-- Contact  -->
+    <!-- <div
+      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <div class="section w-full">
+        <h4 class="section-subtitle text-center">Contact</h4>
+        <h2 class="section-title text-center">Get in Touch</h2>
+        <div class="contact-container container grid">
+          <div></div>
+        </div>
+      </div>
+    </div> -->
 
     <script src="js/themeSwitcher.js"></script>
     <script src="js/modal.js"></script>
