@@ -595,10 +595,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .flex{
   display: flex;
 }
@@ -884,6 +880,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -902,10 +902,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-6{
   padding-left: 1.5rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
 }
 
 .text-center{
@@ -1373,6 +1369,14 @@ img {
   box-shadow: 0 2px 8px hsla(219, 48%, 8%, 0.1);
 }
 
+.profile-img {
+  justify-self: center;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#a394e9, #9198e536);
+  border-radius: 2rem;
+}
+
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: hsl(250 66% 75% / var(--tw-text-opacity));
@@ -1423,14 +1427,6 @@ img {
 
   .md\:block{
     display: block;
-  }
-
-  .md\:h-96{
-    height: 24rem;
-  }
-
-  .md\:w-1\/2{
-    width: 50%;
   }
 
   .md\:w-3\/5{
@@ -1558,10 +1554,6 @@ img {
 
   .xl\:hidden{
     display: none;
-  }
-
-  .xl\:w-1\/4{
-    width: 25%;
   }
 
   .xl\:flex-row{

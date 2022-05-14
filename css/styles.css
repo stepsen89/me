@@ -217,3 +217,11 @@ img {
 .box-shdw {
   box-shadow: 0 2px 8px hsla(219, 48%, 8%, 0.1);
 }
+
+.profile-img {
+  justify-self: center;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#a394e9, #9198e536);
+  border-radius: 2rem;
+}
