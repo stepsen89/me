@@ -17,10 +17,11 @@
         <div class="text-h2 lg:flex justify-between space-x-12 items-center">
           <div class="hidden xl:flex justify-between items-center space-x-12">
             <a class="hover:text-primary" href="#about"> About </a>
-            <a class="hover:text-primary" href="#"> Experience </a>
-            <a class="hover:text-primary" href="#"> Skills </a>
-            <a class="hover:text-primary" href="#"> Portfolio </a>
-            <button class="px-6 py-2 bg-primary text-body rounded-xl">Contact Me</button>
+            <a class="hover:text-primary" href="#work"> Work </a>
+            <a class="hover:text-primary" href="#education"> Education </a>
+            <a class="hover:text-primary" href="#skills"> Skills </a>
+            <a class="hover:text-primary" href="#projects"> Projects </a>
+            <a class="px-6 py-2 bg-primary text-body rounded-xl" href="#contact">Contact Me</a>
           </div>
           <div class="flex gap-8 items-center justify-center">
             <i class="fa-solid fa-sun sun text-2xl"></i>
@@ -42,7 +43,7 @@
           </h1>
           <div class="w-full flex justify-center">
             <a
-              href="/assets/Senoner_CV.pdf"
+              href="/assets/CV_Senoner.pdf"
               download
               class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold mt-12 flex items-center space-x-3 rounded-lg"
             >
@@ -57,7 +58,7 @@
     <div
       class="container mt-16 flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
     >
-      <div class="section w-full about">
+      <div class="section w-full about" id="about">
         <h4 class="section-subtitle text-center">About Me</h4>
         <h2 class="section-title text-center">My Story</h2>
 
@@ -105,26 +106,28 @@
             </p>
             <div class="flex flex-col justify-center sm:flex-row gap-4 items-center">
               <a
-                href="#"
+                href="#contact"
                 class="px-8 py-4 bg-primary text-black font-bold md:mt-12 space-x-3 rounded-lg"
               >
                 Contact Me
               </a>
-              <button
-                class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold md:mt-12 flex items-center space-x-3 rounded-lg"
+              <a
+                href="/assets/CV_Senoner.pdf"
+                download
+                class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold mt-12 flex items-center space-x-3 rounded-lg"
               >
                 Download CV
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- Skills -->
     <div
       class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
-      <div class="section w-full">
+      <div class="section w-full" id="skills">
         <h4 class="section-subtitle text-center">My skills</h4>
         <h2 class="section-title text-center">What I offer</h2>
         <div
@@ -143,36 +146,30 @@
                     </span>
                     <div>
                       <h3 class="skill-name text-md">React</h3>
-                      <span class="skill-level"> Intermediate </span>
+                    </div>
+                  </div>
+                  <div class="skills-display">
+                    <span class="skill-icon"> <i class="fa-solid fa-code"></i> </span>
+                    <div>
+                      <h3 class="skill-name">Redux</h3>
                     </div>
                   </div>
                   <div class="skills-display">
                     <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-sass"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">SCSS</h3>
                     </div>
                   </div>
                 </div>
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
                     <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-js"></i>
                     </span>
                     <div>
                       <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
                     </div>
                   </div>
                   <div class="skills-display">
@@ -180,17 +177,13 @@
                       <i class="fa-brands fa-react"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">React Native</h3>
                     </div>
                   </div>
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-solid fa-file-code"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">TailwindCSS</h3>
                     </div>
                   </div>
                 </div>
@@ -200,64 +193,51 @@
           <div class="skills-content">
             <div class="skills-content--inner">
               <div class="text-sm font-bold lg:text-xl text-primary text-center mb-6 lg:mb-8">
-                Backend Development
+                Backend & Database
               </div>
               <div class="skills-box">
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
                     <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-js"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name text-md">React</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name text-md">NodeJS</h3>
+                    </div>
+                  </div>
+                  <div class="skills-display">
+                    <span class="skill-icon"> <i class="fa-solid fa-database"></i> </span>
+                    <div>
+                      <h3 class="skill-name">PostgreSQL</h3>
+                      <!-- <span class="skill-level"> Intermediate </span> -->
                     </div>
                   </div>
                   <div class="skills-display">
                     <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
+                      <i class="fa-brands fa-python"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">Python</h3>
                     </div>
                   </div>
                 </div>
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-brands fa-java"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">Java</h3>
                     </div>
                   </div>
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-solid fa-code"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">Serverless</h3>
                     </div>
                   </div>
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-solid fa-database"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">GraphQL</h3>
                     </div>
                   </div>
                 </div>
@@ -272,41 +252,35 @@
               <div class="skills-box">
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
                     <div>
-                      <h3 class="skill-name text-md">React</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name text-md">AWS API Gateway</h3>
                     </div>
                   </div>
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">AWS Lambda</h3>
                     </div>
                   </div>
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">AWS ECS</h3>
                     </div>
                   </div>
                 </div>
                 <div class="skills-group grid content-start">
                   <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
+                    <span class="skill-icon"> <i class="fa-brands fa-docker"></i> </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">Docker</h3>
+                    </div>
+                  </div>
+                  <div class="skills-display">
+                    <span class="skill-icon"> <i class="fa-solid fa-cloud"></i> </span>
+                    <div>
+                      <h3 class="skill-name">Kubernetes</h3>
                     </div>
                   </div>
                   <div class="skills-display">
@@ -314,17 +288,7 @@
                       <i class="fa-brands fa-react"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                      <span class="skill-level"> Intermediate </span>
+                      <h3 class="skill-name">AWS Amplify</h3>
                     </div>
                   </div>
                 </div>
@@ -338,7 +302,7 @@
     <div
       class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
-      <div class="section w-full">
+      <div class="section w-full" id="education">
         <h4 class="section-subtitle text-center">Education</h4>
         <h2 class="section-title text-center">What I learned</h2>
 
@@ -350,9 +314,10 @@
               <span class="education-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </span>
-              <h3 class="education-title text-md">BSc Psychology</h3>
-              <h4 class="hidden lg:block text-sm">University of Innsbruck</h4>
-              <span class="text-sm"> 2011 - 2016 </span>
+              <h3 class="education-title text-md text-center">MSc Computing & Tech</h3>
+              <h4 class="hidden md:block text-sm">Northumbria University</h4>
+
+              <span class="text-sm"> 2020 - ongoing (parttime) </span>
             </div>
           </div>
           <div class="education-card">
@@ -360,9 +325,10 @@
               <span class="education-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </span>
-              <h3 class="education-title text-md">BA Business</h3>
-              <h4 class="hidden lg:block text-sm">Management Center Innsbruck</h4>
-              <span class="text-sm"> 2014 - 2017 </span>
+              <h3 class="education-title text-md text-center">Cloud Developer</h3>
+              <h4 class="hidden md:block text-sm">Udacity</h4>
+
+              <span class="text-sm"> 2021 </span>
             </div>
           </div>
           <div class="education-card">
@@ -390,10 +356,9 @@
               <span class="education-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </span>
-              <h3 class="education-title text-md text-center">MSc Computing & Tech</h3>
-              <h4 class="hidden md:block text-sm">Northumbria University</h4>
-
-              <span class="text-sm"> 2020 - ongoing (parttime) </span>
+              <h3 class="education-title text-md">BSc Psychology</h3>
+              <h4 class="hidden lg:block text-sm">University of Innsbruck</h4>
+              <span class="text-sm"> 2011 - 2016 </span>
             </div>
           </div>
           <div class="education-card">
@@ -401,10 +366,9 @@
               <span class="education-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
               </span>
-              <h3 class="education-title text-md text-center">Cloud Developer</h3>
-              <h4 class="hidden md:block text-sm">Udacity</h4>
-
-              <span class="text-sm"> 2021 </span>
+              <h3 class="education-title text-md">BA Business</h3>
+              <h4 class="hidden lg:block text-sm">Management Center Innsbruck</h4>
+              <span class="text-sm"> 2014 - 2017 </span>
             </div>
           </div>
         </div>
@@ -414,7 +378,7 @@
     <div
       class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
-      <div class="section w-full">
+      <div class="section w-full" id="work">
         <h4 class="section-subtitle text-center">Work Experience</h4>
         <h2 class="section-title text-center">Where I've worked</h2>
 
@@ -429,8 +393,13 @@
               <span class="work-company">@District Technologies Ltd</span>
 
               <p class="work-description">
-                Cross-functional work experience in agile environment. Developing client-faced
-                products (web application dashboard, mobile apps) and implementing microservices
+                <i class="fa-solid fa-check"></i> Improving user experience of existing
+                functionalities and implementing new features in our web application dashboard and
+                mobile applications. Working with several AWS services, creating and managing the
+                microservice approach using Serverless Framework. <br /><br />
+                <i class="fa-solid fa-check"></i>
+                In every task I'm responsible for I try to see the big picture, business cases,
+                future aspects and further improvements of features to enhance the product.
               </p>
 
               <div
@@ -444,6 +413,7 @@
                 <div class="badge">Docker</div>
                 <div class="badge">GraphQL</div>
                 <div class="badge">SCSS</div>
+                <div class="badge">Scrum</div>
               </div>
             </div>
           </div>
@@ -452,26 +422,26 @@
           >
             <!-- Client info -->
             <div class="work-container">
-              <span class="work-time"> since Jan 2020 </span>
-              <h3 class="work-title">Software Developer</h3>
-              <span class="work-company">@District Technologies Ltd</span>
+              <span class="work-time"> Mar 2019 - Sep 2019 </span>
+              <h3 class="work-title">Solution Analyst</h3>
+              <span class="work-company">@everis Ltd</span>
 
               <p class="work-description">
-                Cross-functional work experience in agile environment. Developing client-faced
-                products (web application dashboard, mobile apps) and implementing microservices
+                <i class="fa-solid fa-check"></i> Java Developer for British Airways. <br />
+                <br />
+                <i class="fa-solid fa-check"></i> Part of the team responsible for implementing PSD2
+                within their payment systems in Java. Day to day work in an agile environment using
+                JIRA and Confluence.
               </p>
 
               <div
                 class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
               >
-                <div class="badge">React</div>
-                <div class="badge">React Native</div>
                 <div class="badge">Java</div>
-                <div class="badge">AWS</div>
-                <div class="badge">Serverless</div>
-                <div class="badge">Docker</div>
-                <div class="badge">GraphQL</div>
-                <div class="badge">SCSS</div>
+                <div class="badge">Sonar Cube</div>
+                <div class="badge">Testing</div>
+                <div class="badge">Scrum</div>
+                <div class="badge">JIRA</div>
               </div>
             </div>
           </div>
@@ -480,26 +450,29 @@
           >
             <!-- Client info -->
             <div class="work-container">
-              <span class="work-time"> since Jan 2020 </span>
-              <h3 class="work-title">Software Developer</h3>
-              <span class="work-company">@District Technologies Ltd</span>
+              <span class="work-time"> Jun 2018 - Mar 2019 </span>
+              <h3 class="work-title">Junior Developer</h3>
+              <span class="work-company">@Cordant Group Ltd</span>
 
               <p class="work-description">
-                Cross-functional work experience in agile environment. Developing client-faced
-                products (web application dashboard, mobile apps) and implementing microservices
+                <i class="fa-solid fa-check"></i> As part of the development team I was using
+                Angular for the main product - to connect people with jobs in some of UK’s biggest
+                private and public sector organisation. <br />
+                <br />
+                <i class="fa-solid fa-check"></i>
+                Backend responsibilities included working day to day with Serverless framework
+                developing micro-services on AWS.
               </p>
 
               <div
                 class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
               >
-                <div class="badge">React</div>
-                <div class="badge">React Native</div>
-                <div class="badge">Java</div>
-                <div class="badge">AWS</div>
+                <div class="badge">Angular</div>
+                <div class="badge">RxJS</div>
                 <div class="badge">Serverless</div>
-                <div class="badge">Docker</div>
-                <div class="badge">GraphQL</div>
-                <div class="badge">SCSS</div>
+                <div class="badge">AWS</div>
+                <div class="badge">PostgreSQL</div>
+                <div class="badge">SCRUM</div>
               </div>
             </div>
           </div>
@@ -511,24 +484,43 @@
     <div
       class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
-      <section class="w-full" id="projects">
+      <section class="section w-full" id="projects">
         <h4 class="section-subtitle text-center">Projects</h4>
         <h2 class="section-title text-center">What I've built</h2>
+        <p class="text-center hidden md:block pt-4">
+          Recent projects - more projects and challenges can be found
+          <a
+            href="https://frontendmentor-challenges-stepsen89.vercel.app/"
+            class="text-primary font-bold"
+          >
+            here
+          </a>
+          or on my
+          <a href="https://github.com/stepsen89" class="text-primary font-bold"> Github</a>
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-12 mb-8">
           <div class="card">
             <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/nextjs-music-events-app"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">API</div>
-                <div class="badge small w-min">Tailwind</div>
+                <div class="badge small w-min">React</div>
+                <div class="badge small w-min">NextJS</div>
+                <div class="badge small w-min">Strapi</div>
               </div>
               <img
-                src="assets/images/desktop-clock-app-day.png"
+                src="assets/images/music-event-app.png"
                 class="w-full h-48 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Clock and Date Application</h3>
+            <h3 class="card-title pt-2">Music Event Application</h3>
 
-            <span class="project-button"> More info </span>
+            <span class="project-button"> View </span>
 
             <div class="project-modal">
               <div class="content">
@@ -547,81 +539,109 @@
 
           <div class="card">
             <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/github-user-search"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <div class="flex gap-2 absolute pt-2 right-2">
+                <div class="badge small w-min">React</div>
+                <div class="badge small w-min">API</div>
                 <div class="badge small w-min">TailwindCSS</div>
               </div>
               <img
-                src="assets/images/bookmark-desktop-preview.png"
+                src="assets/images/github-user-search-desktop.png"
                 class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Bookmark Manager Landing Page</h3>
+            <h3 class="card-title pt-2">Github User Search Application</h3>
 
-            <a>View <i class="fa-solid fa-angle-right"></i></a>
+            <a
+              href="https://stepsen89.github.io/frontendmentor-challenges/github-user-search/build/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
           </div>
 
           <div class="card">
             <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/url-shortening-application"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">SCSS</div>
+                <div class="badge small w-min">React</div>
+                <div class="badge small w-min">API</div>
               </div>
               <img
-                src="assets/images/meeet-desktop-preview.png"
-                class="w-full h-36 lg:h-48 object-cover"
-              />
-            </div>
-            <h3 class="card-title pt-2">Meet Landing Page</h3>
-
-            <a>View</a>
-          </div>
-
-          <div class="card">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">SCSS</div>
-              </div>
-              <img
-                src="assets/images/profile-desktop.png"
-                class="w-full h-36 lg:h-48 object-cover"
-              />
-            </div>
-            <h3 class="card-title pt-2">Profile Preview Component</h3>
-
-            <a>View</a>
-          </div>
-          <div class="card">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">SCSS</div>
-              </div>
-              <img
-                src="assets/images/social-desktop-dark.png"
+                src="assets/images/shortener-desktop-with-link.png"
                 class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Social Media Stats Page</h3>
+            <h3 class="card-title pt-2">URL Shortener Application</h3>
 
-            <a>View</a>
+            <a
+              href="https://stepsen89.github.io/frontendmentor-challenges/url-shortening-application/build/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
           </div>
-          <div class="card">
+
+          <div class="card hidden md:block">
             <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/memory-game"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="flex gap-2 absolute pt-2 right-2">
+                <div class="badge small w-min">React</div>
+              </div>
+              <img src="assets/images/memory_game.png" class="w-full h-36 lg:h-48 object-fill" />
+            </div>
+            <h3 class="card-title pt-2">Memory Game</h3>
+
+            <a
+              href="https://stepsen89.github.io/frontendmentor-challenges/memory-game/build/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="card hidden md:block">
+            <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a href="https://github.com/stepsen89/dev-notes-next-app" class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="flex gap-2 absolute pt-2 right-2">
+                <div class="badge small w-min">React</div>
+                <div class="badge small w-min">NextJS</div>
+              </div>
+              <img src="assets/images/dev-notes-app.png" class="w-full h-36 lg:h-48 object-fill" />
+            </div>
+            <h3 class="card-title pt-2">Dev Notes Next App</h3>
+
+            <a href="https://dev-notes-next-app.vercel.app/"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+
+          <div class="card hidden md:block">
+            <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/fylo-landing-page"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <div class="flex gap-2 absolute pt-2 right-2">
                 <div class="badge small">SCSS</div>
-              </div>
-              <img
-                src="assets/images/time-tracking-desktop.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Time Tracking Dashboard Page</h3>
-
-            <a>View</a>
-          </div>
-          <div class="card">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">API</div>
-                <div class="badge small w-min">React</div>
               </div>
               <img
                 src="assets/images/fylo-desktop-preview.png"
@@ -630,35 +650,85 @@
             </div>
             <h3 class="card-title pt-2">Fylo Landing Page</h3>
 
-            <a>View</a>
+            <a
+              href="https://stepsen89.github.io/frontendmentor-challenges/fylo-landing-page/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
           </div>
-          <div class="card">
+
+          <div class="card hidden md:block">
             <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/time-tracking-dashboard"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">SCSS</div>
+                <div class="badge small">JS</div>
+                <div class="badge small">SCSS</div>
               </div>
               <img
-                src="assets/images/huddle-desktop-preview.png"
+                src="assets/images/time-tracking-desktop.png"
                 class="w-full h-36 lg:h-48 object-fill"
               />
             </div>
-            <h3 class="card-title pt-2">Huddle Landing Page</h3>
+            <h3 class="card-title pt-2">Time tracking dashboard</h3>
 
-            <a>View</a>
+            <a href="https://stepsen89.github.io/frontendmentor-challenges/huddle/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
           </div>
-          <div class="card">
+
+          <div class="card hidden md:block">
             <div class="relative">
-              <div class="flex absolute pt-2 left-4">
-                <div class="badge small w-min"><i class="fa-brands fa-github"></i></div>
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/meet-landing-page"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
               <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">React</div>
+                <div class="badge small">SCSS</div>
               </div>
-              <img src="assets/images/nft-desktop.png" class="w-full h-36 lg:h-48 object-fill" />
+              <img
+                src="assets/images/meeet-desktop-preview.png"
+                class="w-full h-36 lg:h-48 object-fill"
+              />
             </div>
-            <h3 class="card-title pt-2">NFT Card Preview</h3>
+            <h3 class="card-title pt-2">Meet Landing Page</h3>
 
-            <a> More Info </a>
+            <a
+              href="https://stepsen89.github.io/frontendmentor-challenges/meet-landing-page/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+
+          <div class="card hidden md:block">
+            <div class="relative">
+              <div class="flex gap-2 absolute pt-2 left-2">
+                <a
+                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/bookmark-manager"
+                  class="badge small w-min"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="flex gap-2 absolute pt-2 right-2">
+                <div class="badge small">TailwindCSS</div>
+              </div>
+              <img
+                src="assets/images/bookmark-desktop-preview.png"
+                class="w-full h-36 lg:h-48 object-fill"
+              />
+            </div>
+            <h3 class="card-title pt-2">Bookmark Manager Landing Page</h3>
+
+            <a
+              href="https://stepsen89.github.io/frontendmentor-challenges/bookmark-manager/index.html"
+              >View <i class="fa-solid fa-angle-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -676,6 +746,42 @@
         </div>
       </div>
     </div> -->
+
+    <div
+      class="container mt-16 flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
+    >
+      <div class="section w-full about" id="contact">
+        <h4 class="section-subtitle text-center">Get in touch!</h4>
+        <h2 class="section-title text-center">Contact Me</h2>
+
+        <p class="text-center text-lg font-bold pt-12">
+          <a href="mailto:stepsen.dev@gmail.com">stepsen.dev@gmail.com</a>
+        </p>
+        <div
+          class="container flex flex-col justify-center items-center xl:flex-row pt-8 gap-6 mb-12"
+        >
+          <a href="https://github.com/stepsen89" class="text-4xl w-min text-primary"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/stephanie-senoner/"
+            class="text-4xl w-min text-primary"
+            ><i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/stepsen89" class="text-4xl w-min text-primary"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+
+          <a
+            href="/assets/CV_Senoner.pdf"
+            download
+            class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold flex items-center space-x-3 rounded-lg"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script src="js/themeSwitcher.js"></script>
     <script src="js/modal.js"></script>
