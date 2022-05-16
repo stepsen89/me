@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/96c7bba04c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/output.css" />
-    <title>Document</title>
+    <title>Stepsen Portfolio</title>
   </head>
   <body class="font-poppins bg-lightBody dark:bg-body text-black dark:text-white">
-    <header class="py-8">
+    <header class="py-6 fixed w-full bg-lightContainer dark:bg-container box-shdw z-50">
       <div
         class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
       >
@@ -17,20 +17,31 @@
         <div class="text-h2 lg:flex justify-between space-x-12 items-center">
           <div class="hidden xl:flex justify-between items-center space-x-12">
             <a class="hover:text-primary" href="#about"> About </a>
+            <a class="hover:text-primary" href="#skills"> Skills </a>
             <a class="hover:text-primary" href="#work"> Work </a>
             <a class="hover:text-primary" href="#education"> Education </a>
-            <a class="hover:text-primary" href="#skills"> Skills </a>
             <a class="hover:text-primary" href="#projects"> Projects </a>
             <a class="px-6 py-2 bg-primary text-body rounded-xl" href="#contact">Contact Me</a>
           </div>
           <div class="flex gap-8 items-center justify-center">
             <i class="fa-solid fa-sun sun text-2xl"></i>
             <i class="fa-solid fa-moon moon text-2xl"></i>
-            <span class="text-3xl">
-              <i class="fa-solid fa-bars-staggered xl:hidden text-primary"></i>
+            <span class="text-3xl" id="nav-burger">
+              <i class="fa-solid fa-bars-staggered lg:hidden text-primary"></i>
             </span>
           </div>
         </div>
+      </div>
+      <div
+        class="hidden absolute w-full h-auto bg-lightContainer dark:bg-container flex flex-col gap-4 justify-start p-4 top-20 items-center rounded box-shdw"
+        id="nav-menu"
+      >
+        <a class="hover:text-primary select" href="#about"> About </a>
+        <a class="hover:text-primary select" href="#skills"> Skills </a>
+        <a class="hover:text-primary select" href="#work"> Work </a>
+        <a class="hover:text-primary select" href="#education"> Education </a>
+        <a class="hover:text-primary select" href="#projects"> Projects </a>
+        <a class="px-6 py-2 bg-primary text-body rounded-xl select" href="#contact">Contact Me</a>
       </div>
     </header>
     <!-- hero section -->
@@ -38,8 +49,9 @@
       <div class="flex flex-wrap md:flex-nowrap w-full">
         <div class="flex flex-col justify-center mt-0 md:my-36 w-full items-center">
           <h3 class="text-3xl text-primary">Hi. I'm Steph.</h3>
-          <h1 class="font-bold text-5xl md:text-4xl lg:text-6xl text-center">
-            I'm a Software Developer
+          <h1 class="font-bold text-5xl md:text-4xl lg:text-6xl text-center h-36">
+            <!-- <span class="hidden md:inline-block"> I'm </span> -->
+            <div class="word" id="word"></div>
           </h1>
           <div class="w-full flex justify-center">
             <a
@@ -56,11 +68,14 @@
 
     <!-- About Me -->
     <div
-      class="container mt-16 flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
+      class="container flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
+      id="about"
     >
-      <div class="section w-full about" id="about">
-        <h4 class="section-subtitle text-center">About Me</h4>
-        <h2 class="section-title text-center">My Story</h2>
+      <div class="section w-full about mt-16">
+        <div class="flex justify-center flex-col items-center">
+          <h4 class="section-subtitle text-center">About Me</h4>
+          <h2 class="section-title text-center">My Story</h2>
+        </div>
 
         <div
           class="about-container container flex flex-col justify-center items-center xl:flex-row pt-8"
@@ -125,11 +140,14 @@
     </div>
     <!-- Skills -->
     <div
-      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      id="skills"
     >
-      <div class="section w-full" id="skills">
-        <h4 class="section-subtitle text-center">My skills</h4>
-        <h2 class="section-title text-center">What I offer</h2>
+      <div class="section w-full mt-16">
+        <div class="flex justify-center flex-col items-center">
+          <h4 class="section-subtitle text-center">My skills</h4>
+          <h2 class="section-title text-center">What I offer</h2>
+        </div>
         <div
           class="skills-container container flex flex-col md:flex-wrap md:flex-row md:justify-center items-center pt-8"
         >
@@ -202,7 +220,7 @@
                       <i class="fa-brands fa-js"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name text-md">NodeJS</h3>
+                      <h3 class="skill-name">NodeJS</h3>
                     </div>
                   </div>
                   <div class="skills-display">
@@ -254,19 +272,25 @@
                   <div class="skills-display">
                     <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
                     <div>
-                      <h3 class="skill-name text-md">AWS API Gateway</h3>
+                      <h3 class="skill-name">
+                        <span class="hidden 2xl:inline-block">AWS</span> API Gateway
+                      </h3>
                     </div>
                   </div>
                   <div class="skills-display">
                     <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
                     <div>
-                      <h3 class="skill-name">AWS Lambda</h3>
+                      <h3 class="skill-name">
+                        <span class="hidden 2xl:inline-block">AWS</span> Lambda
+                      </h3>
                     </div>
                   </div>
                   <div class="skills-display">
                     <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
                     <div>
-                      <h3 class="skill-name">AWS ECS</h3>
+                      <h3 class="skill-name">
+                        <span class="hidden 2xl:inline-block">AWS</span> ECS
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -288,7 +312,9 @@
                       <i class="fa-brands fa-react"></i>
                     </span>
                     <div>
-                      <h3 class="skill-name">AWS Amplify</h3>
+                      <h3 class="skill-name">
+                        <span class="hidden 2xl:inline-block">AWS</span> Amplify
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -298,13 +324,122 @@
         </div>
       </div>
     </div>
+
+    <!-- Work Experience  -->
+    <div
+      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      id="work"
+    >
+      <div class="section w-full mt-16">
+        <div class="flex justify-center flex-col items-center">
+          <h4 class="section-subtitle text-center">Work Experience</h4>
+          <h2 class="section-title text-center">Where I've worked</h2>
+        </div>
+        <div class="space-y-12 my-16">
+          <div
+            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
+          >
+            <!-- Client info -->
+            <div class="work-container">
+              <span class="work-time"> since Jan 2020 </span>
+              <h3 class="work-title">Software Developer</h3>
+              <span class="work-company">@District Technologies Ltd</span>
+
+              <p class="work-description">
+                Improving user experience of existing functionalities and implementing new features
+                in our web application dashboard and mobile applications. Working with several AWS
+                services, creating and managing microservices using Serverless Framework.
+                <br /><br />
+                In every task I'm responsible for I try to see the big picture, business cases,
+                future aspects and further improvements of features to enhance the product.
+              </p>
+
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">React</div>
+                <div class="badge">React Native</div>
+                <div class="badge">Java</div>
+                <div class="badge">AWS</div>
+                <div class="badge">Serverless</div>
+                <div class="badge">Docker</div>
+                <div class="badge">GraphQL</div>
+                <div class="badge">SCSS</div>
+                <div class="badge">Agile</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
+          >
+            <!-- Client info -->
+            <div class="work-container">
+              <span class="work-time"> Mar 2019 - Sep 2019 </span>
+              <h3 class="work-title">Solution Analyst</h3>
+              <span class="work-company">@everis Ltd</span>
+
+              <p class="work-description">
+                Java Developer for British Airways. <br />
+                <br />
+                I was part of the team responsible for implementing PSD2 within their payment
+                systems in Java. Day to day work in an agile environment we used JIRA and
+                Confluence.
+              </p>
+
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">Java</div>
+                <div class="badge">Sonar Cube</div>
+                <div class="badge">Testing</div>
+                <div class="badge">Agile</div>
+                <div class="badge">JIRA</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
+          >
+            <!-- Client info -->
+            <div class="work-container">
+              <span class="work-time"> Jun 2018 - Mar 2019 </span>
+              <h3 class="work-title">Junior Developer</h3>
+              <span class="work-company">@Cordant Group Ltd</span>
+
+              <p class="work-description">
+                As part of the development team I was using Angular for the main product - to
+                connect people with jobs in some of UK’s biggest private and public sector
+                organisation. <br />
+                <br />
+                Backend responsibilities included working day to day with Serverless framework
+                developing micro-services on AWS.
+              </p>
+
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">Angular</div>
+                <div class="badge">RxJS</div>
+                <div class="badge">Serverless</div>
+                <div class="badge">AWS</div>
+                <div class="badge">PostgreSQL</div>
+                <div class="badge">Agile</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Educational background -->
     <div
-      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      id="education"
     >
-      <div class="section w-full" id="education">
-        <h4 class="section-subtitle text-center">Education</h4>
-        <h2 class="section-title text-center">What I learned</h2>
+      <div class="section w-full mt-16">
+        <div class="flex justify-center flex-col items-center">
+          <h4 class="section-subtitle text-center">Education</h4>
+          <h2 class="section-title text-center">What I learned</h2>
+        </div>
 
         <div
           class="education-container container flex flex-col md:flex-wrap md:flex-row md:justify-center pt-8"
@@ -374,119 +509,16 @@
         </div>
       </div>
     </div>
-    <!-- Work Experience  -->
-    <div
-      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-    >
-      <div class="section w-full" id="work">
-        <h4 class="section-subtitle text-center">Work Experience</h4>
-        <h2 class="section-title text-center">Where I've worked</h2>
-
-        <div class="space-y-12 my-16">
-          <div
-            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="work-container">
-              <span class="work-time"> since Jan 2020 </span>
-              <h3 class="work-title">Software Developer</h3>
-              <span class="work-company">@District Technologies Ltd</span>
-
-              <p class="work-description">
-                <i class="fa-solid fa-check"></i> Improving user experience of existing
-                functionalities and implementing new features in our web application dashboard and
-                mobile applications. Working with several AWS services, creating and managing the
-                microservice approach using Serverless Framework. <br /><br />
-                <i class="fa-solid fa-check"></i>
-                In every task I'm responsible for I try to see the big picture, business cases,
-                future aspects and further improvements of features to enhance the product.
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">React</div>
-                <div class="badge">React Native</div>
-                <div class="badge">Java</div>
-                <div class="badge">AWS</div>
-                <div class="badge">Serverless</div>
-                <div class="badge">Docker</div>
-                <div class="badge">GraphQL</div>
-                <div class="badge">SCSS</div>
-                <div class="badge">Scrum</div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="work-container">
-              <span class="work-time"> Mar 2019 - Sep 2019 </span>
-              <h3 class="work-title">Solution Analyst</h3>
-              <span class="work-company">@everis Ltd</span>
-
-              <p class="work-description">
-                <i class="fa-solid fa-check"></i> Java Developer for British Airways. <br />
-                <br />
-                <i class="fa-solid fa-check"></i> Part of the team responsible for implementing PSD2
-                within their payment systems in Java. Day to day work in an agile environment using
-                JIRA and Confluence.
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">Java</div>
-                <div class="badge">Sonar Cube</div>
-                <div class="badge">Testing</div>
-                <div class="badge">Scrum</div>
-                <div class="badge">JIRA</div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="work-container">
-              <span class="work-time"> Jun 2018 - Mar 2019 </span>
-              <h3 class="work-title">Junior Developer</h3>
-              <span class="work-company">@Cordant Group Ltd</span>
-
-              <p class="work-description">
-                <i class="fa-solid fa-check"></i> As part of the development team I was using
-                Angular for the main product - to connect people with jobs in some of UK’s biggest
-                private and public sector organisation. <br />
-                <br />
-                <i class="fa-solid fa-check"></i>
-                Backend responsibilities included working day to day with Serverless framework
-                developing micro-services on AWS.
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">Angular</div>
-                <div class="badge">RxJS</div>
-                <div class="badge">Serverless</div>
-                <div class="badge">AWS</div>
-                <div class="badge">PostgreSQL</div>
-                <div class="badge">SCRUM</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Projects -->
     <div
-      class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      id="projects"
     >
-      <section class="section w-full" id="projects">
-        <h4 class="section-subtitle text-center">Projects</h4>
-        <h2 class="section-title text-center">What I've built</h2>
+      <section class="section w-full mt-16">
+        <div class="flex justify-center flex-col items-center">
+          <h4 class="section-subtitle text-center">Projects</h4>
+          <h2 class="section-title text-center">What I've built</h2>
+        </div>
         <p class="text-center hidden md:block pt-4">
           Recent projects - more projects and challenges can be found
           <a
@@ -522,7 +554,7 @@
 
             <span class="project-button"> View </span>
 
-            <div class="project-modal">
+            <!-- <div class="project-modal">
               <div class="content">
                 <span class="text-lg">
                   <i class="fa-solid fa-xmark close"></i>
@@ -534,7 +566,7 @@
                   <div class="badge w-min">React</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="card">
@@ -748,12 +780,14 @@
     </div> -->
 
     <div
-      class="container mt-16 flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
+      class="container flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
+      id="contact"
     >
-      <div class="section w-full about" id="contact">
-        <h4 class="section-subtitle text-center">Get in touch!</h4>
-        <h2 class="section-title text-center">Contact Me</h2>
-
+      <div class="section w-full about mt-16">
+        <div class="flex justify-center flex-col items-center">
+          <h4 class="section-subtitle text-center">Get in touch!</h4>
+          <h2 class="section-title text-center">Contact Me</h2>
+        </div>
         <p class="text-center text-lg font-bold pt-12">
           <a href="mailto:stepsen.dev@gmail.com">stepsen.dev@gmail.com</a>
         </p>
@@ -782,7 +816,8 @@
         </div>
       </div>
     </div>
-
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/themeSwitcher.js"></script>
     <script src="js/modal.js"></script>
   </body>

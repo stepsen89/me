@@ -45,6 +45,19 @@ img {
 
 .section-title {
   @apply text-3xl font-bold;
+  background-image: linear-gradient(
+    120deg,
+    hsl(250 66% 75% / var(--tw-text-opacity)) 0%,
+    hsl(250 66% 75% / var(--tw-text-opacity)) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.section-title:hover {
+  background-size: 100% 100%;
 }
 
 .section-subtitle {
@@ -87,12 +100,16 @@ img {
   @apply flex gap-2;
 }
 
+.skill-name {
+  @apply text-sm 2xl:text-base;
+}
+
 .skill-level {
   @apply text-xs md:text-sm;
 }
 
 .skill-icon {
-  @apply text-base text-primary;
+  @apply text-sm md:text-base text-primary;
 }
 
 .education-icon {
