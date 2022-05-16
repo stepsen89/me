@@ -26,24 +26,32 @@
           <div class="flex gap-8 items-center justify-center">
             <i class="fa-solid fa-sun sun text-2xl"></i>
             <i class="fa-solid fa-moon moon text-2xl"></i>
-            <span class="text-3xl lg:hidden" id="nav-burger">
-              <i class="fa-solid fa-bars-staggered text-primary"></i>
-            </span>
           </div>
         </div>
       </div>
-      <div
-        class="hidden absolute w-full h-auto bg-lightContainer dark:bg-container flex flex-col gap-4 justify-start p-4 top-20 items-center rounded box-shdw"
-        id="nav-menu"
-      >
-        <a class="hover:text-primary select" href="#about"> About </a>
-        <a class="hover:text-primary select" href="#skills"> Skills </a>
-        <a class="hover:text-primary select" href="#work"> Work </a>
-        <a class="hover:text-primary select" href="#education"> Education </a>
-        <a class="hover:text-primary select" href="#projects"> Projects </a>
-        <a class="px-6 py-2 bg-primary text-body rounded-xl select" href="#contact">Contact Me</a>
-      </div>
     </header>
+    <span
+      class="text-3xl lg:hidden fixed bottom-4 md:bottom-8 right-2 md:right-8 bg-lightContainer p-6 box-shdw rounded-lg border-2 border-primary z-50"
+      id="nav-burger"
+    >
+      <i class="fa-solid fa-bars-staggered text-primary"></i>
+    </span>
+    <div class="nav-menu">
+      <div class="hidden" id="nav-menu">
+        <div class="fixed mobile-nav">
+          <div class="mobile-nav--content">
+            <a class="hover:text-primary select" href="#about"> About </a>
+            <a class="hover:text-primary select" href="#skills"> Skills </a>
+            <a class="hover:text-primary select" href="#work"> Work </a>
+            <a class="hover:text-primary select" href="#education"> Education </a>
+            <a class="hover:text-primary select" href="#projects"> Projects </a>
+            <a class="px-6 py-2 bg-primary text-body rounded-xl select" href="#contact"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- hero section -->
     <div class="container mt-16 flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
       <div class="flex flex-wrap md:flex-nowrap w-full">

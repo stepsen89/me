@@ -242,3 +242,42 @@ img {
   background: linear-gradient(#a394e9, #9198e536);
   border-radius: 2rem;
 }
+
+/* #nav-burger {
+  border-radius: 50%;
+} */
+
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(250, 28%, 74%, 0.7);
+  /* padding: 2rem 2rem; */
+  /* display: flex;
+  justify-content: end; */
+  display: flex;
+  align-items: flex-end;
+  @apply py-8 px-6 md:px-8;
+
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  transition: 0.4s;
+  z-index: 49;
+  bottom: 0;
+  height: 100%;
+}
+
+.mobile-nav--content {
+  height: 50%;
+  /* bottom: 5rem; */
+  position: relative;
+  width: 100%;
+  /* background-color: hsl(219, 48%, 8%); */
+  @apply bg-lightContainer dark:bg-container bottom-20 md:bottom-24 md:text-2xl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
