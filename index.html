@@ -1,832 +1,443 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/96c7bba04c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="dist/output.css" />
-    <title>Stepsen Portfolio</title>
+    <title>Stephanie Senoner | Engineering Manager</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="font-poppins bg-lightBody dark:bg-body text-black dark:text-white">
-    <header class="py-6 w-full bg-lightContainer dark:bg-container box-shdw">
-      <div
-        class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-      >
-        <div class="text-lg font-bold md:text-3xl">Stepsen.dev</div>
-        <div class="text-h2 lg:flex justify-between space-x-12 items-center">
-          <div class="hidden xl:flex justify-between items-center space-x-12">
-            <a class="hover:text-primary" href="#about"> About </a>
-            <a class="hover:text-primary" href="#skills"> Skills </a>
-            <a class="hover:text-primary" href="#work"> Work </a>
-            <a class="hover:text-primary" href="#education"> Education </a>
-            <a class="hover:text-primary" href="#projects"> Projects </a>
-            <a class="px-6 py-2 bg-primary text-body rounded-xl" href="#contact">Contact Me</a>
-          </div>
-          <div class="flex gap-8 items-center justify-center">
-            <i class="fa-solid fa-sun sun text-2xl"></i>
-            <i class="fa-solid fa-moon moon text-2xl"></i>
-          </div>
-        </div>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">Stephanie<span>.dev</span></div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a class="cta-link" href="#contact">Contact</a>
+        </nav>
       </div>
     </header>
-    <span
-      class="text-3xl lg:hidden fixed bottom-4 md:bottom-8 right-2 md:right-8 bg-lightContainer p-6 box-shdw rounded-lg border-2 border-primary z-50"
-      id="nav-burger"
-    >
-      <i class="fa-solid fa-bars-staggered text-primary"></i>
-    </span>
-    <div class="nav-menu">
-      <div class="hidden" id="nav-menu">
-        <div class="fixed mobile-nav">
-          <div class="mobile-nav--content">
-            <a class="hover:text-primary select" href="#about"> About </a>
-            <a class="hover:text-primary select" href="#skills"> Skills </a>
-            <a class="hover:text-primary select" href="#work"> Work </a>
-            <a class="hover:text-primary select" href="#education"> Education </a>
-            <a class="hover:text-primary select" href="#projects"> Projects </a>
-            <a class="px-6 py-2 bg-primary text-body rounded-xl select" href="#contact"
-              >Contact Me</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- hero section -->
-    <div class="container mt-16 flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
-      <div class="flex flex-wrap md:flex-nowrap w-full">
-        <div class="flex flex-col justify-center mt-0 md:my-36 w-full items-center">
-          <h3 class="text-3xl text-primary">Hi. I'm Steph.</h3>
-          <h1 class="font-bold text-5xl md:text-4xl lg:text-6xl text-center h-36">
-            <!-- <span class="hidden md:inline-block"> I'm </span> -->
-            <div class="word" id="word"></div>
-          </h1>
-          <div class="w-full flex justify-center">
-            <a
-              href="/assets/CV_Senoner.pdf"
-              download
-              class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold mt-12 flex items-center space-x-3 rounded-lg"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- About Me -->
-    <div
-      class="container flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
-      id="about"
-    >
-      <div class="section w-full about mt-4 md:mt-16">
-        <div class="flex justify-center flex-col items-center">
-          <h4 class="section-subtitle text-center">About Me</h4>
-          <h2 class="section-title text-center">My Story</h2>
+    <main class="page">
+      <section class="hero" id="top">
+        <article class="card hero-copy">
+          <span class="eyebrow">Engineering leadership</span>
+          <h1>Hi. I'm Stephanie.</h1>
+          <p class="lead">
+            Engineering Manager with a strong background as a senior software engineer, focused on
+            building healthy teams, improving delivery, and shipping user-centred products. I bring
+            a mix of technical depth, product thinking, and people leadership across web, mobile,
+            and cloud environments.
+          </p>
+          <section class="quote">
+            <strong>What defines my work</strong>
+            I focus on building teams that deliver sustainably: clear priorities, strong
+            collaboration, thoughtful technical decisions, and creating an environment where
+            engineers can do their best work.
+          </section>
+          <div class="signature-line">
+            Engineering leadership with product instincts and technical depth
+          </div>
+          <div class="actions">
+            <a class="button primary" href="#experience">View experience</a>
+            <a class="button secondary" href="mailto:stepsen.dev@gmail.com">Email me</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <div>
+            <h2>About Me</h2>
+          </div>
         </div>
 
-        <div
-          class="about-container container flex flex-col justify-center items-center xl:flex-row pt-8"
-        >
-          <div class="profile-img">
-            <img src="assets/images/clip-image.png" alt="" width="400" height="200" class="" />
-          </div>
-          <div class="about-data text-center md:w-3/5 lg:w-full lg:p-16">
-            <div class="info flex gap-2 mb-7 lg:px-8 w-full justify-center">
-              <div class="w-1/3 lg:w-1/4">
-                <div class="bg-lightContainer dark:bg-container rounded-xl py-3 px-2 box-shdw">
-                  <span class="icon">
-                    <i class="fa-solid fa-earth-asia icon"></i>
-                  </span>
-                  <h3 class="text-sm xl:text-base">Location</h3>
-                  <span class="text-xs xl:text-sm"> London, UK </span>
-                </div>
-              </div>
-              <div class="w-1/3 lg:w-1/4">
-                <div class="bg-lightContainer dark:bg-container rounded-xl py-3 px-2 box-shdw">
-                  <span class="icon">
-                    <i class="fa-solid fa-list-check"></i>
-                  </span>
-                  <h3 class="text-sm xl:text-base">Projects</h3>
-                  <span class="text-xs xl:text-sm"> 14+</span>
-                </div>
-              </div>
-              <div class="w-1/3 lg:w-1/4">
-                <div class="bg-lightContainer dark:bg-container rounded-xl py-3 px-2 box-shdw">
-                  <span class="icon">
-                    <i class="fa-solid fa-laptop-code icon"></i>
-                  </span>
-                  <h3 class="text-sm xl:text-base">Experience</h3>
-                  <span class="text-xs xl:text-sm"> 4+ years</span>
+        <div class="about-grid">
+          <article class="card portrait-card">
+            <div class="portrait">
+              <div class="portrait-ring">
+                <div class="portrait-core">
+                  <img
+                    class="portrait-image"
+                    src="images/profile-pic.jpg"
+                    alt="Stephanie Senoner"
+                  />
                 </div>
               </div>
             </div>
-            <p class="mb-12 xl:px-24 xl:text-lg">
-              I'm a passionate Software Developer from Austria with experience in building
-              user-centred applications, and strong understanding of React and JavaScript. I focus
-              on product development and user experience, creating products users love applying my
-              background in psychology and business.
+          </article>
+
+          <article class="card about-card">
+            <div class="info-strip">
+              <div class="info-box">
+                <strong>Location</strong>
+                <span>London, UK</span>
+              </div>
+              <div class="info-box">
+                <strong>Current focus</strong>
+                <span>Engineering management and delivery leadership</span>
+              </div>
+              <div class="info-box">
+                <strong>Background</strong>
+                <span>Engineering leadership built on hands-on software delivery</span>
+              </div>
+            </div>
+            <p>
+              I'm an Engineering Manager from Austria, based in London, with a strong foundation in
+              software engineering and a growing focus on team leadership. My experience spans
+              frontend, backend, mobile, and cloud systems, which helps me partner effectively with
+              engineers, product managers, and stakeholders. Alongside technical depth, my
+              background in psychology and business informs how I approach communication, coaching,
+              and organisational effectiveness. Outside of work, I enjoy hiking, cooking, and
+              exploring the intersection of technology and creativity and spending time with family
+              and my two cats.
             </p>
-            <div class="flex flex-col justify-center sm:flex-row gap-4 items-center">
-              <a
-                href="#contact"
-                class="px-8 py-4 bg-primary text-black font-bold md:mt-12 space-x-3 rounded-lg"
-              >
-                Contact Me
-              </a>
-              <a
-                href="/assets/CV_Senoner.pdf"
-                download
-                class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold mt-12 flex items-center space-x-3 rounded-lg"
-              >
-                Download CV
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Skills -->
-    <div
-      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-      id="skills"
-    >
-      <div class="section w-full mt-4 md:mt-16">
-        <div class="flex justify-center flex-col items-center">
-          <h4 class="section-subtitle text-center">My skills</h4>
-          <h2 class="section-title text-center">What I offer</h2>
-        </div>
-        <div
-          class="skills-container container flex flex-col md:flex-wrap md:flex-row md:justify-center items-center pt-8"
-        >
-          <div class="skills-content">
-            <div class="skills-content--inner">
-              <div class="text-sm lg:text-xl font-bold text-primary text-center mb-6 lg:mb-8">
-                Frontend Development
-              </div>
-              <div class="skills-box">
-                <div class="skills-group grid content-start">
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name text-md">React</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-solid fa-code"></i> </span>
-                    <div>
-                      <h3 class="skill-name">Redux</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-sass"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">SCSS</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills-group grid content-start">
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-js"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">JavaScript</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">React Native</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-solid fa-file-code"></i> </span>
-                    <div>
-                      <h3 class="skill-name">TailwindCSS</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skills-content">
-            <div class="skills-content--inner">
-              <div class="text-sm font-bold lg:text-xl text-primary text-center mb-6 lg:mb-8">
-                Backend & Database
-              </div>
-              <div class="skills-box">
-                <div class="skills-group grid content-start">
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-js"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">NodeJS</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-solid fa-database"></i> </span>
-                    <div>
-                      <h3 class="skill-name">PostgreSQL</h3>
-                      <!-- <span class="skill-level"> Intermediate </span> -->
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-python"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">Python</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills-group grid content-start">
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-brands fa-java"></i> </span>
-                    <div>
-                      <h3 class="skill-name">Java</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-solid fa-code"></i> </span>
-                    <div>
-                      <h3 class="skill-name">Serverless</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-solid fa-database"></i> </span>
-                    <div>
-                      <h3 class="skill-name">GraphQL</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skills-content">
-            <div class="skills-content--inner">
-              <div class="text-sm font-bold lg:text-xl text-primary text-center mb-6 lg:mb-8">
-                Cloud Development
-              </div>
-              <div class="skills-box">
-                <div class="skills-group grid content-start">
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
-                    <div>
-                      <h3 class="skill-name">
-                        <span class="hidden 2xl:inline-block">AWS</span> API Gateway
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
-                    <div>
-                      <h3 class="skill-name">
-                        <span class="hidden 2xl:inline-block">AWS</span> Lambda
-                      </h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-brands fa-aws"></i> </span>
-                    <div>
-                      <h3 class="skill-name">
-                        <span class="hidden 2xl:inline-block">AWS</span> ECS
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills-group grid content-start">
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-brands fa-docker"></i> </span>
-                    <div>
-                      <h3 class="skill-name">Docker</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon"> <i class="fa-solid fa-cloud"></i> </span>
-                    <div>
-                      <h3 class="skill-name">Kubernetes</h3>
-                    </div>
-                  </div>
-                  <div class="skills-display">
-                    <span class="skill-icon">
-                      <i class="fa-brands fa-react"></i>
-                    </span>
-                    <div>
-                      <h3 class="skill-name">
-                        <span class="hidden 2xl:inline-block">AWS</span> Amplify
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Work Experience  -->
-    <div
-      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-      id="work"
-    >
-      <div class="section w-full mt-4 md:mt-16">
-        <div class="flex justify-center flex-col items-center">
-          <h4 class="section-subtitle text-center">Work Experience</h4>
-          <h2 class="section-title text-center">Where I've worked</h2>
-        </div>
-        <div class="space-y-12 my-16">
-          <div
-            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="work-container">
-              <span class="work-time"> since Jan 2020 </span>
-              <h3 class="work-title">Software Developer</h3>
-              <span class="work-company">@District Technologies Ltd</span>
-
-              <p class="work-description">
-                Improving user experience of existing functionalities and implementing new features
-                in our web application dashboard and mobile applications. Working with several AWS
-                services, creating and managing microservices using Serverless Framework.
-                <br /><br />
-                In every task I'm responsible for I try to see the big picture, business cases,
-                future aspects and further improvements of features to enhance the product.
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">React</div>
-                <div class="badge">React Native</div>
-                <div class="badge">Java</div>
-                <div class="badge">AWS</div>
-                <div class="badge">Serverless</div>
-                <div class="badge">Docker</div>
-                <div class="badge">GraphQL</div>
-                <div class="badge">SCSS</div>
-                <div class="badge">Agile</div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="work-container">
-              <span class="work-time"> Mar 2019 - Sep 2019 </span>
-              <h3 class="work-title">Solution Analyst</h3>
-              <span class="work-company">@everis Ltd</span>
-
-              <p class="work-description">
-                Java Developer for British Airways. <br />
-                <br />
-                I was part of the team responsible for implementing PSD2 within their payment
-                systems in Java. Day to day work in an agile environment we used JIRA and
-                Confluence.
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">Java</div>
-                <div class="badge">Sonar Cube</div>
-                <div class="badge">Testing</div>
-                <div class="badge">Agile</div>
-                <div class="badge">JIRA</div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-full bg-lightContainer box-shdw dark:bg-container rounded-xl p-8 lg:px-32 lg:py-8 lg:space-x-24 flex justify-center lg:justify-start"
-          >
-            <!-- Client info -->
-            <div class="work-container">
-              <span class="work-time"> Jun 2018 - Mar 2019 </span>
-              <h3 class="work-title">Junior Developer</h3>
-              <span class="work-company">@Cordant Group Ltd</span>
-
-              <p class="work-description">
-                As part of the development team I was using Angular for the main product - to
-                connect people with jobs in some of UK’s biggest private and public sector
-                organisation. <br />
-                <br />
-                Backend responsibilities included working day to day with Serverless framework
-                developing micro-services on AWS.
-              </p>
-
-              <div
-                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
-              >
-                <div class="badge">Angular</div>
-                <div class="badge">RxJS</div>
-                <div class="badge">Serverless</div>
-                <div class="badge">AWS</div>
-                <div class="badge">PostgreSQL</div>
-                <div class="badge">Agile</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Educational background -->
-    <div
-      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-      id="education"
-    >
-      <div class="section w-full mt-4 md:mt-16">
-        <div class="flex justify-center flex-col items-center">
-          <h4 class="section-subtitle text-center">Education</h4>
-          <h2 class="section-title text-center">What I learned</h2>
-        </div>
-
-        <div
-          class="education-container container flex flex-col md:flex-wrap md:flex-row md:justify-center pt-8"
-        >
-          <div class="education-card">
-            <div class="education-card--inner">
-              <span class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </span>
-              <h3 class="education-title text-md text-center">MSc Computing & Tech</h3>
-              <h4 class="hidden md:block text-sm">Northumbria University</h4>
-
-              <span class="text-sm"> 2020 - ongoing (parttime) </span>
-            </div>
-          </div>
-          <div class="education-card">
-            <div class="education-card--inner">
-              <span class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </span>
-              <h3 class="education-title text-md text-center">Cloud Developer</h3>
-              <h4 class="hidden md:block text-sm">Udacity</h4>
-
-              <span class="text-sm"> 2021 </span>
-            </div>
-          </div>
-          <div class="education-card">
-            <div class="education-card--inner">
-              <span class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </span>
-              <h3 class="education-title text-md">Digital Analytics Program</h3>
-              <h4 class="hidden md:block text-sm">University of British Columbia</h4>
-              <span class="text-sm"> 2017</span>
-            </div>
-          </div>
-          <div class="education-card">
-            <div class="education-card--inner">
-              <span class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </span>
-              <h3 class="education-title text-md">Web Dev Bootcamp</h3>
-              <h4 class="hidden md:block text-sm">Ironhack Barcelona (ES)</h4>
-              <span class="text-sm"> 2018 </span>
-            </div>
-          </div>
-          <div class="education-card">
-            <div class="education-card--inner">
-              <span class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </span>
-              <h3 class="education-title text-md">BSc Psychology</h3>
-              <h4 class="hidden lg:block text-sm">University of Innsbruck</h4>
-              <span class="text-sm"> 2011 - 2016 </span>
-            </div>
-          </div>
-          <div class="education-card">
-            <div class="education-card--inner">
-              <span class="education-icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </span>
-              <h3 class="education-title text-md">BA Business</h3>
-              <h4 class="hidden lg:block text-sm">Management Center Innsbruck</h4>
-              <span class="text-sm"> 2014 - 2017 </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Projects -->
-    <div
-      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-      id="projects"
-    >
-      <section class="section w-full mt-4 md:mt-16">
-        <div class="flex justify-center flex-col items-center">
-          <h4 class="section-subtitle text-center">Projects</h4>
-          <h2 class="section-title text-center">What I've built</h2>
-        </div>
-        <p class="text-center hidden md:block pt-4">
-          Recent projects - more projects and challenges can be found
-          <a
-            href="https://frontendmentor-challenges-stepsen89.vercel.app/"
-            class="text-primary font-bold"
-          >
-            here
-          </a>
-          or on my
-          <a href="https://github.com/stepsen89" class="text-primary font-bold"> Github</a>
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-12 mb-8">
-          <div class="card">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/nextjs-music-events-app"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">React</div>
-                <div class="badge small w-min">NextJS</div>
-                <div class="badge small w-min">Strapi</div>
-              </div>
-              <img
-                src="assets/images/music-event-app.png"
-                class="w-full h-48 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Music Event Application</h3>
-
-            <span class="project-button"> View </span>
-
-            <!-- <div class="project-modal">
-              <div class="content">
-                <span class="text-lg">
-                  <i class="fa-solid fa-xmark close"></i>
-                </span>
-                <h3>Desktop Clock Application</h3>
-                <p>This is supposed to be a description</p>
-                <div class="flex pt-2">
-                  <div class="badge w-min">React</div>
-                  <div class="badge w-min">React</div>
-                </div>
-              </div>
-            </div> -->
-          </div>
-
-          <div class="card">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/github-user-search"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">React</div>
-                <div class="badge small w-min">API</div>
-                <div class="badge small w-min">TailwindCSS</div>
-              </div>
-              <img
-                src="assets/images/github-user-search-desktop.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Github User Search Application</h3>
-
-            <a
-              href="https://stepsen89.github.io/frontendmentor-challenges/github-user-search/build/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-
-          <div class="card">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/url-shortening-application"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">React</div>
-                <div class="badge small w-min">API</div>
-              </div>
-              <img
-                src="assets/images/shortener-desktop-with-link.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">URL Shortener Application</h3>
-
-            <a
-              href="https://stepsen89.github.io/frontendmentor-challenges/url-shortening-application/build/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-
-          <div class="card hidden md:block">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/memory-game"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">React</div>
-              </div>
-              <img src="assets/images/memory_game.png" class="w-full h-36 lg:h-48 object-fill" />
-            </div>
-            <h3 class="card-title pt-2">Memory Game</h3>
-
-            <a
-              href="https://stepsen89.github.io/frontendmentor-challenges/memory-game/build/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-          <div class="card hidden md:block">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a href="https://github.com/stepsen89/dev-notes-next-app" class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small w-min">React</div>
-                <div class="badge small w-min">NextJS</div>
-              </div>
-              <img src="assets/images/dev-notes-app.png" class="w-full h-36 lg:h-48 object-fill" />
-            </div>
-            <h3 class="card-title pt-2">Dev Notes Next App</h3>
-
-            <a href="https://dev-notes-next-app.vercel.app/"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-
-          <div class="card hidden md:block">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/fylo-landing-page"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small">SCSS</div>
-              </div>
-              <img
-                src="assets/images/fylo-desktop-preview.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Fylo Landing Page</h3>
-
-            <a
-              href="https://stepsen89.github.io/frontendmentor-challenges/fylo-landing-page/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-
-          <div class="card hidden md:block">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/time-tracking-dashboard"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small">JS</div>
-                <div class="badge small">SCSS</div>
-              </div>
-              <img
-                src="assets/images/time-tracking-desktop.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Time tracking dashboard</h3>
-
-            <a href="https://stepsen89.github.io/frontendmentor-challenges/huddle/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-
-          <div class="card hidden md:block">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/meet-landing-page"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small">SCSS</div>
-              </div>
-              <img
-                src="assets/images/meeet-desktop-preview.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Meet Landing Page</h3>
-
-            <a
-              href="https://stepsen89.github.io/frontendmentor-challenges/meet-landing-page/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
-
-          <div class="card hidden md:block">
-            <div class="relative">
-              <div class="flex gap-2 absolute pt-2 left-2">
-                <a
-                  href="https://github.com/stepsen89/frontendmentor-challenges/tree/master/bookmark-manager"
-                  class="badge small w-min"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-              <div class="flex gap-2 absolute pt-2 right-2">
-                <div class="badge small">TailwindCSS</div>
-              </div>
-              <img
-                src="assets/images/bookmark-desktop-preview.png"
-                class="w-full h-36 lg:h-48 object-fill"
-              />
-            </div>
-            <h3 class="card-title pt-2">Bookmark Manager Landing Page</h3>
-
-            <a
-              href="https://stepsen89.github.io/frontendmentor-challenges/bookmark-manager/index.html"
-              >View <i class="fa-solid fa-angle-right"></i
-            ></a>
-          </div>
+          </article>
         </div>
       </section>
-    </div>
 
-    <!-- Contact  -->
-    <!-- <div
-      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
-    >
-      <div class="section w-full">
-        <h4 class="section-subtitle text-center">Contact</h4>
-        <h2 class="section-title text-center">Get in Touch</h2>
-        <div class="contact-container container grid">
-          <div></div>
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <div>
+            <h2>Leadership Focus</h2>
+          </div>
         </div>
-      </div>
-    </div> -->
 
-    <div
-      class="container flex justify-center items-center mx-auto px-8 md:px-14 xl:px-24 w-full"
-      id="contact"
-    >
-      <div class="section w-full about mt-4 md:mt-16">
-        <div class="flex justify-center flex-col items-center">
-          <h4 class="section-subtitle text-center">Get in touch!</h4>
-          <h2 class="section-title text-center">Contact Me</h2>
-        </div>
-        <p class="text-center text-lg font-bold pt-12">
-          <a href="mailto:stepsen.dev@gmail.com">stepsen.dev@gmail.com</a>
-        </p>
-        <div
-          class="container flex flex-col justify-center items-center xl:flex-row pt-8 gap-6 mb-12"
-        >
-          <a href="https://github.com/stepsen89" class="text-4xl w-min text-primary"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/stephanie-senoner/"
-            class="text-4xl w-min text-primary"
-            ><i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com/stepsen89" class="text-4xl w-min text-primary"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+        <div class="skill-columns">
+          <article class="skill-group">
+            <h3>People &amp; Team Leadership</h3>
+            <div class="chip-list">
+              <span class="chip">Coaching</span>
+              <span class="chip">Mentoring</span>
+              <span class="chip">Team health</span>
+              <span class="chip">Career support</span>
+              <span class="chip">Cross-functional collaboration</span>
+              <span class="chip">Inclusive leadership</span>
+            </div>
+          </article>
 
-          <a
-            href="/assets/CV_Senoner.pdf"
-            download
-            class="px-8 py-4 border-primary border-2 text-black dark:text-white font-bold flex items-center space-x-3 rounded-lg"
-          >
-            Download CV
-          </a>
+          <article class="skill-group">
+            <h3>Delivery &amp; Execution</h3>
+            <div class="chip-list">
+              <span class="chip">Roadmap execution</span>
+              <span class="chip">Agile delivery</span>
+              <span class="chip">Stakeholder alignment</span>
+              <span class="chip">Prioritisation</span>
+              <span class="chip">Continuous improvement</span>
+              <span class="chip">Operational thinking</span>
+            </div>
+          </article>
+
+          <article class="skill-group">
+            <h3>Technical Foundation</h3>
+            <div class="chip-list">
+              <span class="chip">React</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React Native</span>
+              <span class="chip">Java</span>
+              <span class="chip">AWS</span>
+              <span class="chip">Serverless</span>
+              <span class="chip">Docker</span>
+              <span class="chip">GraphQL</span>
+            </div>
+          </article>
         </div>
-      </div>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/themeSwitcher.js"></script>
-    <script src="js/modal.js"></script>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading">
+          <div>
+            <h2>Experience</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <small>Current (since 2024)</small>
+                <h3>Engineering Manager</h3>
+                <p>Zopa Bank</p>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <p>
+                As an Engineering Manager at Zopa Bank, I focus on creating the conditions for teams
+                to do strong work: clear direction, healthy collaboration, thoughtful
+                prioritisation, and steady delivery against product goals. That also includes
+                encouraging pragmatic AI adoption in engineering work and helping teams use tools
+                like Codex and Claude Code to improve workflows, learning, and execution without
+                compromising quality.
+              </p>
+              <p>
+                My background as a software engineer across frontend, mobile, backend, and cloud
+                gives me the technical depth to support engineers, guide trade-offs, improve
+                delivery workflows, and partner effectively with product and stakeholders without
+                losing sight of user and business outcomes. I use AI in my own day-to-day work as
+                well, both as a thinking partner and as a practical way to speed up research,
+                prototyping, and engineering iteration.
+              </p>
+              <div class="chip-list">
+                <span class="chip">People management</span>
+                <span class="chip">Delivery leadership</span>
+                <span class="chip">Stakeholder management</span>
+                <span class="chip">Technical guidance</span>
+                <span class="chip">Product collaboration</span>
+                <span class="chip">Team effectiveness</span>
+                <span class="chip">AI enablement</span>
+                <span class="chip">Claude Code</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <small>Volunteer leadership</small>
+                <h3>Frontend Lead &amp; Mentor</h3>
+                <p>Women Coding Community</p>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <p>
+                Alongside my day-to-day role, I contribute to Women Coding Community as a Frontend
+                Lead and Mentor. That work has included supporting learners and career changers,
+                sharing technical guidance, and helping people build confidence in interviews,
+                projects, and day-to-day engineering practice.
+              </p>
+              <p>
+                It reflects an important part of how I lead: investing in people, creating inclusive
+                spaces for growth, and helping engineers progress through practical support rather
+                than abstract advice.
+              </p>
+              <div class="chip-list">
+                <span class="chip">Mentoring</span>
+                <span class="chip">Community leadership</span>
+                <span class="chip">Frontend leadership</span>
+                <span class="chip">Interview support</span>
+                <span class="chip">Career development</span>
+                <span class="chip">Inclusive leadership</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <small>Previous individual contributor roles</small>
+                <h3>From Junior Engineer to Senior Software Engineer</h3>
+                <p>Across fintech, product, and platform teams</p>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <p>
+                Before moving into engineering management, I built a broad technical foundation
+                across product and platform roles in fintech and software teams. I worked on web and
+                mobile applications, backend services, and cloud infrastructure, with hands-on
+                experience across React, React Native, Angular, Java, JavaScript, AWS, Serverless,
+                GraphQL, Docker, and PostgreSQL.
+              </p>
+              <p>
+                That background included improving existing user experiences, delivering new
+                features, and working in agile teams where product thinking, technical quality, and
+                user needs all had to be balanced. It still shapes how I support engineers and make
+                decisions as a manager today.
+              </p>
+              <div class="chip-list">
+                <span class="chip">React</span>
+                <span class="chip">React Native</span>
+                <span class="chip">Angular</span>
+                <span class="chip">Java</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">AWS</span>
+                <span class="chip">Serverless</span>
+                <span class="chip">GraphQL</span>
+                <span class="chip">Docker</span>
+                <span class="chip">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading">
+          <div>
+            <h2>Education</h2>
+          </div>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>MSc Computing &amp; Tech</h3>
+            <p>Northumbria University</p>
+          </article>
+          <article class="education-card">
+            <h3>Cloud Developer</h3>
+            <p>Udacity</p>
+          </article>
+          <article class="education-card">
+            <h3>Digital Analytics Program</h3>
+            <p>University of British Columbia</p>
+          </article>
+          <article class="education-card">
+            <h3>Web Dev Bootcamp</h3>
+            <p>Ironhack Barcelona</p>
+          </article>
+          <article class="education-card">
+            <h3>BSc Psychology</h3>
+            <p>University of Innsbruck</p>
+          </article>
+          <article class="education-card">
+            <h3>BA Business</h3>
+            <p>Management Center Innsbruck</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <div>
+            <h2>Leadership Profile</h2>
+            <p>
+              Instead of leading with side projects, this section now emphasises the kinds of impact
+              relevant to EM hiring while still preserving links to technical work.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual">
+              <strong>01</strong>
+              <div class="project-tags">
+                <span class="chip">People leadership</span>
+                <span class="chip">Team effectiveness</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Build strong teams</h3>
+              <p>
+                I care about creating an environment where engineers have clarity, support, and room
+                to grow. Coaching and mentoring are central parts of how I lead.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <strong>02</strong>
+              <div class="project-tags">
+                <span class="chip">Delivery</span>
+                <span class="chip">Product partnership</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Deliver outcomes, not just output</h3>
+              <p>
+                I bring a product mindset to engineering leadership, helping teams connect execution
+                to user value, business goals, and sustainable technical decisions.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <strong>03</strong>
+              <div class="project-tags">
+                <span class="chip">Technical depth</span>
+                <span class="chip">Credibility</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Lead from technical understanding</h3>
+              <p>
+                My engineering background helps me support teams without micromanaging them. I can
+                engage in architecture, delivery risk, and trade-off discussions with real context.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <strong>04</strong>
+              <div class="project-tags">
+                <span class="chip">Communication</span>
+                <span class="chip">Stakeholders</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Communicate with clarity</h3>
+              <p>
+                I value transparent communication, clear expectations, and alignment across
+                engineering, product, and wider business stakeholders.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <strong>05</strong>
+              <div class="project-tags">
+                <span class="chip">Growth</span>
+                <span class="chip">Learning culture</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Support growth and progression</h3>
+              <p>
+                Mentoring, study-group leadership, and career support are part of how I help people
+                develop confidence and momentum in their careers.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-heading">
+          <div>
+            <h2>Contact</h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Get in touch</h3>
+            <p>
+              If you'd like to connect about engineering leadership, team effectiveness, developer
+              experience, or thoughtful use of AI in software teams, feel free to reach out.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="mailto:stepsen.dev@gmail.com">Email Stephanie</a>
+              <a class="button secondary" href="https://www.linkedin.com/in/stephanie-senoner/"
+                >View LinkedIn</a
+              >
+            </div>
+          </article>
+
+          <article class="contact-card">
+            <h3>Links</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <span>Email</span>
+                <a href="mailto:stephanie.senoner@gmail.com">stephanie.senoner@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span>GitHub</span>
+                <a href="https://github.com/stepsen89">github.com/stepsen89</a>
+              </div>
+              <div class="contact-item">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/stephanie-senoner/">stephanie-senoner</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
